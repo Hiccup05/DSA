@@ -7,6 +7,7 @@ public class FIndMin {
             }
         }
         return min;
+
     }
     public static void main(String[] args) {
         FIndMin find = new FIndMin();
