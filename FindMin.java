@@ -1,4 +1,4 @@
-public class FIndMin {
+public class FindMin {
     public int findMin(int[] arr){
         int min=arr[0];
         for(int i=0;i<arr.length;i++){
@@ -10,7 +10,7 @@ public class FIndMin {
 
     }
     public static void main(String[] args) {
-        FIndMin find = new FIndMin();
+        FindMin find = new FindMin();
         int min=find.findMin(new int[]{4,8,2,1,9,0});
         System.out.println(min);
     }
