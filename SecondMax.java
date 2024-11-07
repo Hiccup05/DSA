@@ -7,7 +7,7 @@ public class SecondMax {
                 secondMax=max; //if we take the value replaced by array in max than at the end the last value repalce will be second max
                 max=arr[i]; //finding the max
             }
-            if(arr[i]>secondMax && arr[i]!=max){ //if first element is greater than second max and not equal to max than that is second max
+            if(arr[i]>secondMax && arr[i]!=max){ //this condititon take account of element which is smaller than max but greater than secondmax
                 secondMax=arr[i];
             }
         }
