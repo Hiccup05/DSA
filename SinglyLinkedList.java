@@ -1,6 +1,6 @@
 public class SinglyLinkedList {
     Node head;
-    private class Node {
+    public class Node {
         String data;
         Node next;
         public Node(String data){
@@ -60,6 +60,18 @@ public class SinglyLinkedList {
             current=current.next;  //until that point increasing by one
         }
         current.next=null;   //if next to next is null that removing next or making it null which removes the connection between second last and last
+    }
+
+    public void deleteLast2(){
+        //concept is to store last and second last node. when we reach last node apply condition next is null
+        // then previous.next=null will remove the linkage between second last and last node.
+        Node current=head;
+        Node previous=null;
+        while(current.next!=null){
+            previous=current;
+            current=current.next;
+        }
+        previous.next=null;
     }
 
     public static void main(String[] args) {
