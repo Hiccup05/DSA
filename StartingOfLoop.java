@@ -3,7 +3,7 @@ public class StartingOfLoop extends DeleteAtDesire{
         Node fast=head;
         Node slow=head;
         while(fast!=null && fast.next!=null){
-            fast=fast.next;
+            fast=fast.next.next;
             slow=slow.next;
 
             if(fast==slow){
@@ -12,6 +12,7 @@ public class StartingOfLoop extends DeleteAtDesire{
         }
         return null;
     }
+
     public Node getStarting(Node slow){
         //this concept is Floyd cycle detection
         Node temp=head;
