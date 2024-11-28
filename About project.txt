@@ -1,0 +1,1 @@
+doubly linked list contain both previous and next node which makes it easer to insert and delete.
