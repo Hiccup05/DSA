@@ -1,0 +1,7 @@
+What is circular singly linked list?
+It is the singly linked list which next node of last node is head instead of null.
+Here we track the last node instead of head node.
+
+Why is it important?
+
+Why do we need it and when?
