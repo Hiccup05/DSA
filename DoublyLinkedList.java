@@ -68,20 +68,21 @@ public class DoublyLinkedList {
 
 
     public void deleteLast(){
-        node temp=tail;
+        node temp=tail; //as we can access last element in doubly lnked list
         if(isEmpty()){
             System.out.println("LIst is empty");
             return;
         }
-        tail=tail.prev;
-        tail.next=null;
-        temp.prev=null;
-        size--;
+        tail=tail.prev;  //can be move from back to front
+        tail.next=null;  //removing link of tail
+        temp.prev=null;  //removing the link from tail
+        size--;  //after removing size need to reduce
     }
 
     public static void main(String[] args) {
         DoublyLinkedList list = new DoublyLinkedList();
-        list.addLast(6);        list.addLast(7);
+        list.addLast(6);
+        list.addLast(7);
         list.addLast(8);
         list.print();
         list.deleteLast();
